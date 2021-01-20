@@ -1,6 +1,12 @@
 @import "utils";
 @import "typography";
 
+@import "page.scss";
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Barlow", sans-serif;
 }
