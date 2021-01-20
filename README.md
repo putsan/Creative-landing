@@ -1,4 +1,4 @@
-# Creative landing page
+# Creative landing
 
 - Large screens 2560px
 - Full HD 1920px

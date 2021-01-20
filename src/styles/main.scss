@@ -1,6 +1,9 @@
 @import "utils";
-@import "fonts";
 @import "typography";
+
+html {
+  font-family: "Barlow", sans-serif;
+}
 
 body {
   background: $c-gray;
