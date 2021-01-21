@@ -15,7 +15,6 @@
 
 @mixin centering($_collum: false) {
   display: flex;
-  padding: 0 56px;
   align-items: center;
 
   @if $_collum {

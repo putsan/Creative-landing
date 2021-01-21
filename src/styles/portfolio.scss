@@ -1,0 +1,21 @@
+.portfolio {
+  @include centering(true);
+
+  padding: 139px 0 43px;
+
+  &__titles {
+    padding-bottom: 74px;
+    text-align: center;
+  }
+
+  &__subheader {
+    padding-bottom: 3px;
+  }
+
+  &__row {
+    @include centering;
+
+    gap: 82px;
+    margin-bottom: 80px;
+  }
+}

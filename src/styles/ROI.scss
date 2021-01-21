@@ -1,0 +1,50 @@
+$wave-width: 50%;
+$wave-heigth: 240px;
+$vertical: -$wave-heigth / 2;
+$horisontal: 0;
+
+.ROI {
+  @include centering(true);
+
+  position: relative;
+  padding: 102px 0 121px;
+
+  background: $wave-bg;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: $horisontal;
+    bottom: $vertical;
+
+    width: $wave-width;
+    height: $wave-heigth;
+
+    border-radius: 50%;
+    background: $wave-bg;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: $horisontal;
+    bottom: $vertical;
+
+    width: $wave-width;
+    height: $wave-heigth;
+
+    border-radius: 50%;
+    background: $text-contrast;
+  }
+
+  &__row {
+    @include centering;
+
+    width: 1486px;
+    justify-content: space-between;
+  }
+
+  &__right {
+    max-width: $text-row-width;
+  }
+}
