@@ -1,0 +1,18 @@
+.mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 126px;
+  padding: 115px 50px;
+  box-sizing: border-box;
+
+  background: no-repeat url(../images/mail/Background.svg);
+
+  &__wrapper {
+    width: 100%;
+    max-width: 714px;
+    min-height: 296px;
+
+    text-align: center;
+  }
+}

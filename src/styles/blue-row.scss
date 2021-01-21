@@ -1,0 +1,20 @@
+.blue-row {
+  display: flex;
+  justify-content: space-between;
+  min-height: 415px;
+  padding: 42px 225px 76px 255px;
+
+  background: no-repeat url(../images/blue-row/background.svg);
+
+  &__image {
+
+  }
+
+  &__text {
+    max-width: 457px;
+  }
+
+  &__button {
+
+  }
+}

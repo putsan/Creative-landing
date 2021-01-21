@@ -1,7 +1,12 @@
 @import "utils";
 @import "typography";
 
-@import "page.scss";
+@import "page";
+@import "targeting";
+@import "blue-row";
+@import "mail";
+@import "footer";
+@import "footer-end";
 
 * {
   box-sizing: border-box;
@@ -12,5 +17,5 @@ html {
 }
 
 body {
-  background: $c-gray;
+  // background: $c-gray;
 }
