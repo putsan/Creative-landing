@@ -1,0 +1,50 @@
+.header {
+  @include centering(true);
+  @include background("../images/header/blue-background.png");
+
+  color: $text-contrast;
+
+  &__navigation {
+    display: flex;
+    width: 1410px;
+  }
+
+  &__nav-list {
+    display: flex;
+    width: 100%;
+  }
+
+  &__dropdown {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 20px;
+      height: 20px;
+
+      background-color: brown;
+    }
+
+    &--off {
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.55);
+  }
+
+  &__preview {
+    width: 800px;
+  }
+}

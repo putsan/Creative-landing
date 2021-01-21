@@ -1,0 +1,8 @@
+.blueprint {
+  @include centering(true);
+  @include background("../images/blueprint/background.svg");
+
+  &__row {
+    display: flex;
+  }
+}

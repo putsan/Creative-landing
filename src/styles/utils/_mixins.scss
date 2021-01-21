@@ -4,3 +4,25 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin background($_url) {
+  position: relative;
+  right: $page-padding;
+  width: calc(100% + 2 * #{$page-padding});
+
+  background: no-repeat url($_url);
+}
+
+@mixin centering($_collum: false) {
+  display: flex;
+  padding: 0 56px;
+  align-items: center;
+
+  @if $_collum {
+    flex-direction: column;
+  }
+
+  @else {
+    justify-content: center;
+  }
+}

@@ -1,20 +1,49 @@
 .blue-row {
+  @include background("../images/blue-row/background.svg");
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-height: 415px;
   padding: 42px 225px 76px 255px;
 
-  background: no-repeat url(../images/blue-row/background.svg);
+  color: $text-contrast;
 
-  &__image {
+  // &__image {
 
-  }
+  // }
 
   &__text {
     max-width: 457px;
   }
 
-  &__button {
+  &__title {
+    margin-bottom: 23px;
 
+    line-height: 45px;
+    letter-spacing: 0.03em;
+    text-shadow: $title-shadow;
+  }
+
+  &__button {
+    @include centering;
+
+    width: 180px;
+    height: 63px;
+    gap: 9px;
+
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $contrast;
+    white-space: nowrap;
+
+    background: $like-white;
+    border: none;
+    border-radius: $border-radius;
+
+    &--big {
+      @include centering(true);
+    }
   }
 }

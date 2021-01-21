@@ -1,0 +1,4 @@
+.dashboard {
+  @include centering(true);
+  @include background("../images/dashboard/background.svg");
+}

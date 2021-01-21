@@ -1,0 +1,25 @@
+.info-card {
+  padding: 60px 20px;
+
+  text-align: center;
+  border-radius: $border-radius;
+
+  &--shadow {
+    box-shadow: $card-shadow;
+  }
+
+  &--blue {
+    background: $card-gradient;
+    box-shadow: $card-shadow;
+  }
+
+  &__title {
+    @extend %card-title;
+
+    margin-bottom: 18px;
+  }
+
+  &__paragraph {
+    color: $card-color;
+  }
+}

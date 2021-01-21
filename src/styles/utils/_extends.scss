@@ -1,4 +1,45 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
+%page-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 400;
+  color: $text;
+}
+
+%h1 {
+  font-size: 54px;
+  line-height: 64.8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+%h2 {
+  font-size: 36px;
+  line-height: 55px;
+  font-weight: 600;
+}
+
+%subheader {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: $text-contrast;
+}
+
+%intro {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+%button {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $contrast;
+}
+
+%card-title {
+  font-size: 22px;
+  line-height: 26.4px;
+  font-weight: 600px;
+  text-transform: uppercase;
 }

@@ -1,0 +1,8 @@
+.spot-on {
+  @include centering;
+  @include background("../images/spot-on/background.svg");
+
+  &__example {
+    width: 205px;
+  }
+}

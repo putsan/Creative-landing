@@ -1,21 +1,24 @@
 @import "utils";
 @import "typography";
 
+@import "body";
 @import "page";
+@import "header";
+
+@import "blueprint";
+@import "spot-on";
+@import "dashboard";
+@import "info-card";
+@import "grid";
+@import "creative";
+@import "optimization";
 @import "targeting";
 @import "blue-row";
 @import "mail";
+
 @import "footer";
 @import "footer-end";
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  font-family: "Barlow", sans-serif;
-}
-
-body {
-  // background: $c-gray;
 }
