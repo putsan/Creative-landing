@@ -11,7 +11,7 @@
     @extend %h3;
 
     margin: 15px 0 25px;
-    text-shadow: $h3-shadow;
+    text-shadow: $title-shadow;
 
     &--dark {
       color: $text;
