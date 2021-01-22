@@ -1,6 +1,12 @@
 @import "utils";
 @import "typography";
 
+@import "info-card";
+@import "grid";
+@import "button";
+@import "row-text";
+@import "blue-row";
+
 @import "body";
 @import "page";
 @import "header";
@@ -9,18 +15,14 @@
 @import "blueprint";
 @import "spot-on";
 @import "dashboard";
-@import "info-card";
-@import "grid";
 @import "creative";
 @import "optimization";
 @import "targeting";
 @import "portfolio";
 @import "post";
-@import "button";
 @import "ROI";
-@import "row-text";
-@import "blue-row";
 @import "testimonials";
+@import "brands";
 @import "mail";
 
 @import "footer";
