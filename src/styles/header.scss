@@ -1,32 +1,53 @@
+%logo {
+  width: 37.1px;
+  height: 40.95px;
+}
+
 .header {
   @include centering(true);
   @include background("../images/header/blue-background.png");
 
+  padding: 44.87px 0 190px;
   color: $text-contrast;
 
   &__navigation {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 1410px;
+  }
+
+  &__logo {
+    @extend %logo;
+  }
+
+  &__picture {
+    @extend %logo;
   }
 
   &__nav-list {
     display: flex;
+    justify-content: flex-end;
+    gap: 71px;
     width: 100%;
+    padding-right: 79px;
+
+    font-size: 16px;
+    line-height: 18.75px;
   }
 
   &__dropdown {
     position: relative;
 
+    cursor: pointer;
+
     &::after {
-      content: "";
+      content: url(../images/header/dropdown.svg);
       position: absolute;
+      right: -18px;
       top: 0;
-      right: 0;
 
-      width: 20px;
-      height: 20px;
-
-      background-color: brown;
+      display: block;
     }
 
     &--off {
@@ -36,19 +57,52 @@
     }
   }
 
+  &__about {
+    color: inherit;
+  }
+
   &__demo {
     @extend %button;
+
+    height: 58.39px;
+    padding: 0 24.2px;
+
+    color: $text-contrast;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: 400;
+
+    border: 1px solid $text-contrast;
+    border-radius: $border-radius - 5;
+    background: none;
   }
 
   &__content {
     text-align: center;
   }
 
+  &__text {
+    padding: 111.74px 0 112.31px;
+  }
+
+  &__subheader {
+    margin-bottom: 15px;
+  }
+
   &__title {
+    margin-bottom: 35px;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.55);
   }
 
+  &__video {
+    width: 895px;
+  }
+
   &__preview {
-    width: 800px;
+    width: 100%;
+
+    border: 39px solid $text-contrast;
+    border-radius: 10px;
+    filter: $preview-shadow;
   }
 }
