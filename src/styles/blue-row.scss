@@ -38,8 +38,15 @@
     border: none;
     border-radius: $border-radius;
 
+    cursor: pointer;
+
     &--big {
+      $size: 150px;
       @include centering(true);
+
+      width: $size;
+      height: $size;
+      gap: 15px;
     }
   }
 }

@@ -36,6 +36,10 @@
     }
   }
 
+  &__demo {
+    @extend %button;
+  }
+
   &__content {
     text-align: center;
   }

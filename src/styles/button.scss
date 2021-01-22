@@ -1,6 +1,8 @@
 .button {
   @extend %button;
-  padding: 16px 50px;
+  
+  width: 168px;
+  padding: 16px 10px;
 
   background: $text-contrast;
   border: 1px solid $contrast;

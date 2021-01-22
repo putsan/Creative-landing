@@ -5,4 +5,8 @@
   &__row {
     display: flex;
   }
+
+  &__left {
+    max-width: 550px;
+  }
 }

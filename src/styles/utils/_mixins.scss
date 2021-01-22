@@ -5,12 +5,14 @@
   }
 }
 
-@mixin background($_url) {
+@mixin background($_url: false) {
   position: relative;
   right: $page-padding;
-  width: calc(100% + 2 * #{$page-padding});
+  width: $wave-width;
 
-  background: no-repeat url($_url);
+  @if $_url {
+    background: no-repeat url($_url);
+  }
 }
 
 @mixin centering($_collum: false) {

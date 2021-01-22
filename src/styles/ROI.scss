@@ -1,40 +1,19 @@
-$wave-width: 50%;
-$wave-heigth: 240px;
-$vertical: -$wave-heigth / 2;
-$horisontal: 0;
-
 .ROI {
   @include centering(true);
-
   position: relative;
-  padding: 102px 0 121px;
 
-  background: $wave-bg;
+  padding: 102px 0 121px;
 
   &::before {
     content: "";
     position: absolute;
-    left: $horisontal;
-    bottom: $vertical;
+    top: -100px;
 
     width: $wave-width;
     height: $wave-heigth;
 
-    border-radius: 50%;
     background: $wave-bg;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: $horisontal;
-    bottom: $vertical;
-
-    width: $wave-width;
-    height: $wave-heigth;
-
-    border-radius: 50%;
-    background: $text-contrast;
+    z-index: -1;
   }
 
   &__row {
@@ -46,5 +25,16 @@ $horisontal: 0;
 
   &__right {
     max-width: $text-row-width;
+  }
+
+  &__wave {
+    position: absolute;
+    bottom: -80px;
+
+    width: calc(100% + 2 * #{$page-padding});
+    height: 500px;
+
+    background: center / contain no-repeat url("../images/ROI/wave.png");
+    z-index: -2;
   }
 }

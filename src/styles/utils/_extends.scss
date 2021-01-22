@@ -44,6 +44,8 @@
   line-height: 18px;
   font-weight: 500;
   color: $contrast;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 %card-title {
@@ -56,4 +58,11 @@
 %post-details {
   line-height: 55px;
   font-weight: 500;
+}
+
+%boards-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 74px;
+  max-width: 1610px;
 }
