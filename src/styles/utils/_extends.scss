@@ -72,3 +72,23 @@
   line-height: 29px;
   font-weight: 600;
 }
+
+%testimonials-sub {
+  color: $contrast;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+%testimonials-title {
+  color: $testimonials-title;
+  font-size: 56px;
+  line-height: 67px;
+}
+
+%responce {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}

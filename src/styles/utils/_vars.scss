@@ -2,6 +2,8 @@ $contrast: #0738dd;
 $like-white: #fbfafd;
 $text: #152370;
 $text-contrast: #fff;
+$testimonials-title: #314d63;
+$responce: #7f7c8c;
 
 $title-shadow: 0 4px 4px rgba(0, 0, 0, 0.55);
 $post-shadow: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.48));
@@ -26,3 +28,7 @@ $wave-bg: #eff2f3;
 $wave-shadow: 0 4px 130px rgba(76, 164, 214, 0.28);
 $wave-width: calc(100% + 2 * #{$page-padding});
 $wave-heigth: 500px;
+
+$arrow-size: 50px;
+$arrow-x: 0;
+$arrow-y: 50%;
