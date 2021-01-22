@@ -1,0 +1,101 @@
+.grow {
+  @include centering(true);
+
+  padding-bottom: 228px;
+  background: center / 85% no-repeat url(../images/grow/map-background.svg);
+
+  &__titles {
+    max-width: 600px;
+    padding-bottom: 101px;
+
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__features {
+    position: relative;
+  }
+
+  &__center {
+    position: absolute;
+    top: 48%;
+    left: 50.5%;
+
+    max-width: 250px;
+
+    text-align: center;
+    color: $text-contrast;
+    letter-spacing: 2px;
+
+    filter: $grow-center-text;
+    transform: translate(-50%);
+  }
+
+  $n1-x: 295px;
+  $n2-x: 235px;
+  $n3-x: 150px;
+
+  $n1-y: 15px;
+  $n2-y: 155px;
+  $n3-y: 295px;
+  $n4-y: 435px;
+  $n5-y: 575px;
+
+  &__info {
+    position: absolute;
+    font-weight: 500;
+
+    &:nth-of-type(1) {
+      top: $n1-y;
+      left: $n1-x;
+    }
+
+    &:nth-of-type(2) {
+      top: $n2-y;
+      left: $n2-x;
+    }
+
+    &:nth-of-type(3) {
+      top: $n3-y;
+      left: $n3-x;
+    }
+
+    &:nth-of-type(4) {
+      top: $n4-y;
+      left: $n2-x;
+    }
+
+    &:nth-of-type(5) {
+      top: $n5-y;
+      left: $n1-x;
+    }
+
+    &:nth-of-type(6) {
+      top: $n1-y;
+      right: $n1-x;
+    }
+
+    &:nth-of-type(7) {
+      top: $n2-y;
+      right: $n2-x;
+    }
+
+    &:nth-of-type(8) {
+      top: $n3-y;
+      right: $n3-x;
+    }
+
+    &:nth-of-type(9) {
+      top: $n4-y;
+      right: $n2-x;
+    }
+
+    &:nth-of-type(10) {
+      top: $n5-y;
+      right: $n1-x;
+    }
+  }
+}
