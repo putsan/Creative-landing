@@ -2,7 +2,95 @@
   @include centering;
   @include background("../images/spot-on/background.svg");
 
+  padding: 267px 0 278px;
+  gap: 160px;
+
+  color: $text-contrast;
+
+  &__left {
+    max-width: 480px;
+    margin-top: 60px;
+  }
+
+  &__right {
+    position: relative;
+
+    width: 580px;
+    height: 429px;
+    margin-right: 165px;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-top: 36px;
+  }
+
+  &__mini-title {
+    @extend %card-title;
+
+    padding-bottom: 4px;
+    text-transform: none;
+  }
+
   &__example {
     width: 205px;
+
+    border-radius: 5px;
+    filter: $spot-on-shadow;
+
+    &--big {
+      width: 363px;
+      z-index: 1;
+    }
+  }
+
+  &__portret {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    filter: $spot-on-shadow;
+  }
+
+  &__comment {
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 600;
+
+    &--bottom {
+      position: absolute;
+      bottom: -70px;
+      left: -120px;
+
+      &::after {
+        content: url(../images/spot-on/info-bottom.svg);
+        position: absolute;
+        bottom: -38px;
+        left: -35px;
+      }
+    }
+
+    &--right {
+      position: absolute;
+      top: 23%;
+      right: -238px;
+
+      &::after {
+        content: url(../images/spot-on/info-right.svg);
+        position: absolute;
+        top: 26px;
+        right: -54px;
+      }
+    }
+  }
+
+  &__string {
+    margin-top: 5px;
+
+    &:first-child {
+      margin: 0 0 40px 11px;
+    }
   }
 }
