@@ -5,6 +5,8 @@
   padding: 115px 50px;
   box-sizing: border-box;
 
+  color: $like-white;
+
   background: center / contain no-repeat url(../images/mail/Background.svg);
 
   &__wrapper {
@@ -13,5 +15,56 @@
     min-height: 296px;
 
     text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    font-weight: 500;
+    text-transform: capitalize;
+    text-shadow: $title-shadow;
+  }
+
+  &__form {
+    position: relative;
+
+    width: 690px;
+    margin-top: 84px;
+  }
+
+  &__input {
+    width: 690px;
+    height: 60px;
+    padding-left: 25px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    background: $like-white;
+    border-radius: 80px;
+    border: none;
+
+    &::placeholder {
+      color: #ddd;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    right: 7px;
+    top: 6px;
+
+    width: 154px;
+    height: 48px;
+
+    color: $text-contrast;
+    font-size: 15px;
+    font-weight: 500;
+
+    background: $submit-bg;
+    border-radius: 80px;
+    border: none;
+
+    cursor: pointer;
   }
 }
