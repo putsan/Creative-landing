@@ -99,10 +99,14 @@
   }
 
   &__preview {
+    $border: 39px;
+
     width: 100%;
 
-    border: 39px solid $text-contrast;
+    border: $border solid $text-contrast;
     border-radius: 10px;
+    outline: 3px solid $text-contrast;
+    outline-offset: -$border - 1;
     filter: $preview-shadow;
   }
 }
