@@ -1,0 +1,40 @@
+.ROI {
+  @include centering(true);
+  position: relative;
+
+  padding: 102px 0 121px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+
+    width: $wave-width;
+    height: $wave-heigth;
+
+    background: $wave-bg;
+    z-index: -1;
+  }
+
+  &__row {
+    @include centering;
+
+    width: 1486px;
+    justify-content: space-between;
+  }
+
+  &__right {
+    max-width: $text-row-width;
+  }
+
+  &__wave {
+    position: absolute;
+    bottom: -80px;
+
+    width: calc(100% + 2 * #{$page-padding});
+    height: 500px;
+
+    background: center / contain no-repeat url("../images/ROI/wave.png");
+    z-index: -2;
+  }
+}

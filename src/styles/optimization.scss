@@ -1,0 +1,13 @@
+.optimization {
+  @include centering(true);
+
+  padding: 96px 0 226px;
+
+  &__title {
+    margin-bottom: 111px;
+  }
+
+  &__text {
+    color: $like-white;
+  }
+}

@@ -1,4 +1,94 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
+%page-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 400;
+  color: $text;
+}
+
+%h1 {
+  font-size: 54px;
+  line-height: 64.8px;
+  font-weight: 600;
+  color: $text-contrast;
+}
+
+%h2 {
+  font-size: 36px;
+  line-height: 55px;
+  font-weight: 600;
+}
+
+%h3 {
+  font-size: 34px;
+  line-height: 41px;
+  font-weight: 600;
+  color: $text-contrast;
+}
+
+%subheader {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: $text-contrast;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+%intro {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+%button {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $contrast;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+%card-title {
+  font-size: 22px;
+  line-height: 26.4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+%post-details {
+  line-height: 55px;
+  font-weight: 500;
+}
+
+%boards-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 74px;
+  max-width: 1610px;
+}
+
+%comment {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+}
+
+%testimonials-sub {
+  color: $contrast;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+%testimonials-title {
+  color: $testimonials-title;
+  font-size: 56px;
+  line-height: 67px;
+}
+
+%responce {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
 }

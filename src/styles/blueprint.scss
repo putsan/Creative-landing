@@ -1,0 +1,91 @@
+.blueprint {
+  @include centering(true);
+  @include background("../images/blueprint/background.svg");
+
+  padding: 103px 0 153px;
+  color: $text-contrast;
+
+  &__titles {
+    max-width: 516px;
+    padding-bottom: 47px;
+
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &__title {
+    @extend %h2;
+
+    margin-bottom: 22px;
+    font-size: 46px;
+    text-shadow: $title-shadow;
+  }
+
+  &__small {
+    display: inline-block;
+    margin-top: 30px;
+
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 600;
+  }
+
+  &__row {
+    @include centering;
+
+    justify-content: space-between;
+    max-width: 1568px;
+    width: 100%;
+  }
+
+  &__left {
+    max-width: 550px;
+    padding-bottom: 100px;
+    margin-left: 80px;
+  }
+
+  &__right {
+    position: relative;
+
+    width: 755px;
+    height: 657px;
+
+    &::before {
+      @extend %comment;
+
+      content: "8";
+      position: absolute;
+      top: 103px;
+      left: -30px;
+
+      color: #24ff00;
+      text-shadow: $comment;
+    }
+  }
+
+  &__comment {
+    position: absolute;
+
+    @extend %comment;
+
+    text-shadow: $comment;
+
+    &--right {
+      top: 80px;
+      right: -47px;
+    }
+
+    &--bottom {
+      bottom: 25px;
+      right: 165px;
+    }
+  }
+
+  &__digit {
+    color: #24ff00;
+  }
+
+  &__arrow {
+    margin-right: 5px;
+  }
+}

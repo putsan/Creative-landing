@@ -1,1 +1,37 @@
-$c-gray: #eee;
+$contrast: #0738dd;
+$like-white: #fbfafd;
+$text: #152370;
+$text-contrast: #fff;
+$testimonials-title: #314d63;
+$responce: #7f7c8c;
+$brands-bg: #fbfbfb;
+$footer: #515151;
+
+$title-shadow: 0 4px 4px rgba(0, 0, 0, 0.55);
+$post-shadow: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.48));
+$post-user-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+$border-shadow: 0 1px 36px rgba(102, 102, 102, 0.16);
+$preview-shadow: drop-shadow(0 20px 50px rgba(45, 161, 247, 0.15));
+$comment: 0 1px 12px rgba(0, 0, 0, 0.6);
+$spot-on-shadow: drop-shadow(0 1px 52px rgba(51, 51, 51, 0.85));
+$grow-center-text: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
+$submit-bg: linear-gradient(360deg, #0083fe 11.12%, #091cd0 100%);
+
+$page-padding: 27px;
+$border-radius: 10px;
+$text-row-width: 485px;
+
+$card-color: #333;
+$card-shadow: 0 1px 30px rgba(111, 178, 216, 0.25);
+$card-gradient: linear-gradient(360deg, #0083fe 11.12%, #091cd0 100%);
+$card-height: 300px;
+$card-width: 330px;
+
+$wave-bg: #eff2f3;
+$wave-shadow: 0 4px 130px rgba(76, 164, 214, 0.28);
+$wave-width: calc(100% + 2 * #{$page-padding});
+$wave-heigth: 500px;
+
+$arrow-size: 50px;
+$arrow-x: 0;
+$arrow-y: 50%;

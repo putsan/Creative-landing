@@ -1,0 +1,47 @@
+.portfolio {
+  @include centering(true);
+
+  position: relative;
+  padding: 139px 0 43px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    width: $wave-width;
+    height: 130%;
+
+    background: $wave-bg;
+    z-index: -2;
+  }
+
+  &::after {
+    content: url(../images/portfolio/decoration.svg);
+    position: absolute;
+    bottom: 5px;
+    right: 102px;
+
+    width: 1635px;
+    height: 732px;
+
+    background: $wave-bg;
+    z-index: -1;
+  }
+
+  &__titles {
+    padding-bottom: 74px;
+    text-align: center;
+  }
+
+  &__subheader {
+    padding-bottom: 3px;
+  }
+
+  &__row {
+    @include centering;
+
+    gap: 82px;
+    margin-bottom: 80px;
+  }
+}

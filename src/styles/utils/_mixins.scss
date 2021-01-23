@@ -4,3 +4,51 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin background($_url: false) {
+  position: relative;
+  right: $page-padding;
+  width: $wave-width;
+
+  @if $_url {
+    background: no-repeat url($_url);
+  }
+}
+
+@mixin centering($_collum: false) {
+  display: flex;
+  align-items: center;
+
+  @if $_collum {
+    flex-direction: column;
+  }
+
+  @else {
+    justify-content: center;
+  }
+}
+
+@mixin slider-button($_opposite: false) {
+  content: "";
+  position: absolute;
+  top: $arrow-y;
+
+  @if $_opposite {
+    right: $arrow-x;
+    transform: translate(50%, -50%);
+  }
+  @else {
+    left: $arrow-x;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  width: $arrow-size;
+  height: $arrow-size;
+
+  background: center / 50% no-repeat url(../images/testimonials/arrow.svg);
+  background-color: $text-contrast;
+  border-radius: $border-radius / 2;
+  box-shadow: $border-shadow;
+
+  cursor: pointer;
+}

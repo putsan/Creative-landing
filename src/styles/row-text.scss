@@ -1,0 +1,30 @@
+.row-text {
+  &__subheader {
+    @extend %subheader;
+
+    &--dark {
+      color: $contrast;
+    }
+  }
+
+  &__title {
+    @extend %h3;
+
+    margin: 15px 0 25px;
+    text-shadow: $title-shadow;
+
+    &--dark {
+      color: $text;
+      text-shadow: none;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 30px;
+    color: $text-contrast;
+
+    &--dark {
+      color: #777;
+    }
+  }
+}

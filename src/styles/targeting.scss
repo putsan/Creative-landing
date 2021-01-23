@@ -1,0 +1,9 @@
+.targeting {
+  @include centering(true);
+
+  padding: 26px 0 125px;
+
+  &__title {
+    margin-bottom: 111px;
+  }
+}

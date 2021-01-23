@@ -1,7 +1,37 @@
 @import "utils";
-@import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+@import "info-card";
+@import "grid";
+@import "button";
+@import "row-text";
+@import "blue-row";
+
+@import "body";
+@import "page";
+@import "header";
+
+@import "grow";
+@import "blueprint";
+@import "spot-on";
+@import "dashboard";
+@import "creative";
+@import "optimization";
+@import "targeting";
+@import "portfolio";
+@import "post";
+@import "ROI";
+@import "testimonials";
+@import "brands";
+@import "mail";
+
+@import "footer";
+@import "footer-end";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }

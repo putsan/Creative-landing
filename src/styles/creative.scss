@@ -1,0 +1,9 @@
+.creative {
+  @include centering(true);
+
+  padding: 5px 0 60px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+}

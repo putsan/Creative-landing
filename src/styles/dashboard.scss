@@ -1,0 +1,38 @@
+.dashboard {
+  @include centering(true);
+  @include background("../images/dashboard/background.svg");
+
+  padding: 90px 56px 221px 64px;
+
+  &__titles {
+    max-width: 516px;
+    padding-bottom: 73px;
+
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__boards {
+    width: 100%;
+  }
+
+  &__board {
+    border-radius: $border-radius;
+    box-shadow: $border-shadow;
+  }
+
+  &__top {
+    @extend %boards-row;
+
+    margin: 0 0 56px auto;
+  }
+
+  &__bottom {
+    @extend %boards-row;
+
+    max-width: 1610px;
+  }
+}

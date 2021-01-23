@@ -1,0 +1,6 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, $card-width);
+  grid-template-rows: repeat(2, $card-height);
+  gap: 30px;
+}
