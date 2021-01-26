@@ -1,10 +1,18 @@
 .button {
   @extend %button;
-  
+
   width: 168px;
   padding: 16px 10px;
 
   background: $text-contrast;
   border: 1px solid $contrast;
   border-radius: 5px 25px;
+
+  &--dark {
+    color: #feffff;
+    text-shadow: $title-shadow;
+
+    background: $submit-bg;
+    border: none;
+  }
 }
