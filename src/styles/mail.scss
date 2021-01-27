@@ -33,8 +33,7 @@
   }
 
   &__input {
-    width: 690px;
-    height: 60px;
+    @include size(690px, 60px);
     padding-left: 25px;
 
     font-size: 15px;
@@ -50,21 +49,62 @@
   }
 
   &__submit {
+    $submit-radius: 80px;
+
     position: absolute;
     right: 7px;
     top: 6px;
 
-    width: 154px;
-    height: 48px;
+    @include size(154px, 48px);
 
     color: $text-contrast;
     font-size: 15px;
     font-weight: 500;
 
     background: $submit-bg;
-    border-radius: 80px;
+    border-radius: $submit-radius;
     border: none;
 
     cursor: pointer;
+
+    @include submit-hover($submit-radius);
+
+    // overflow: hidden;
+    // z-index: 1;
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+
+    //   @include size(100%);
+    //   border-radius: $submit-radius;
+    //   z-index: -2;
+    // }
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+
+    //   @include size(0%, 100%);
+
+    //   background: $submit-bg-darken;
+    //   transition: width $animation, transform $animation;
+    //   border-radius: $submit-radius;
+    //   z-index: -1;
+    // }
+
+    // &:hover {
+    //   &::before {
+    //     width: 100%;
+    //   }
+    // }
+
+    // &:focus {
+    //   transform: scale(0.95);
+    // }
   }
 }

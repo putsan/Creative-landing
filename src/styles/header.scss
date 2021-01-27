@@ -94,6 +94,11 @@
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.55);
   }
 
+  &__button {
+    color: #1348fc;
+    border-color: $text-contrast;
+  }
+
   &__video {
     width: 895px;
   }

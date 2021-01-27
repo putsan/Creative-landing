@@ -2,7 +2,8 @@
   @extend %button;
 
   width: 168px;
-  padding: 16px 10px;
+  max-height: 50px;
+  padding: 15px 10px;
 
   background: $text-contrast;
   border: 1px solid $contrast;
