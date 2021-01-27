@@ -5,6 +5,11 @@
   }
 }
 
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
 @mixin background($_url: false) {
   position: relative;
   right: $page-padding;
@@ -51,4 +56,48 @@
   box-shadow: $border-shadow;
 
   cursor: pointer;
+}
+
+@mixin submit-hover($_radius: 5px, $_relative: false) {
+  @if $_relative {
+    position: relative;
+  }
+
+  overflow: hidden;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include size(100%);
+    border-radius: $_radius;
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include size(0%, 100%);
+
+    background: $submit-bg-darken;
+    transition: width $animation, transform $animation;
+    border-radius: $_radius;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &:focus {
+    transform: scale(0.95);
+  }
 }

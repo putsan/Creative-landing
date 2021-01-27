@@ -63,9 +63,10 @@
 
   &__demo {
     @extend %button;
+    position: relative;
 
-    height: 58.39px;
-    padding: 0 24.2px;
+    @include size(147px, 58px);
+    padding: 0 12px;
 
     color: $text-contrast;
     font-size: 16px;
@@ -74,7 +75,55 @@
 
     border: 1px solid $text-contrast;
     border-radius: $border-radius - 5;
-    background: none;
+    background: transparent;
+
+    overflow: hidden;
+    box-sizing: initial;
+    transition: background-color $animation;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 60px;
+      height: 100%;
+      background: rgba(255,255,255,0.5);
+
+      opacity: 0.5;
+      filter: blur(30px);
+      transform: translateX(-100px)  skewX(-15deg);
+      transition: 0.7s;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 30px;
+      top: 0;
+
+      width: 30px;
+      height: 100%;
+      background: rgba(255,255,255,0.2);
+
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(-100px) skewX(-15deg);
+      transition: 0.7s;
+    }
+    &:hover {
+      background: #3357ce9b;
+
+      &::before {
+        transform: translateX(300px)  skewX(-15deg);
+        opacity: 0.6;
+      }
+      &::after {
+        transform: translateX(300px) skewX(-15deg);
+        opacity: 1;
+      }
+    }
   }
 
   &__content {
@@ -92,6 +141,15 @@
   &__title {
     margin-bottom: 35px;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.55);
+  }
+
+  &__button {
+    color: #1348fc;
+    border-color: $text-contrast;
+
+    &:hover {
+      border-color: $contrast;
+    }
   }
 
   &__video {

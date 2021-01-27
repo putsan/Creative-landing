@@ -92,3 +92,21 @@
   line-height: 30px;
   font-weight: 500;
 }
+
+%details-separator {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 8px;
+
+    width: 2px;
+    height: 20px;
+
+    background: #1b78f6;
+
+    transform: translateY(50%);
+  }
+}

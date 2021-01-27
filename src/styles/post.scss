@@ -13,6 +13,7 @@
 
   &__user {
     @include centering;
+    @extend %details-separator;
 
     gap: 10px;
   }
@@ -20,6 +21,10 @@
   &__user-icon {
     border-radius: 50%;
     box-shadow: $post-user-shadow;
+  }
+
+  &__date {
+    @extend %details-separator;
   }
 
   &__timing {

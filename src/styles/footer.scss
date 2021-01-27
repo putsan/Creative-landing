@@ -46,8 +46,7 @@
   }
 
   &__submit {
-    width: 185px;
-    height: 54.5px;
+    @include size(185px, 54px);
 
     color: $text-contrast;
     font-size: 16px;
@@ -59,6 +58,8 @@
     border: none;
 
     cursor: pointer;
+
+    @include submit-hover(5px, true);
   }
 
   &__nav {
