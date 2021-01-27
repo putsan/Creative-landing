@@ -146,6 +146,10 @@
   &__button {
     color: #1348fc;
     border-color: $text-contrast;
+
+    &:hover {
+      border-color: $contrast;
+    }
   }
 
   &__video {
